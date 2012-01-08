@@ -4,7 +4,7 @@
 $CODELOC = "~/webapps/schedule";
 
 $TMPLOC="/home/mrgschedule/tmp/backup"; # temp staging dir root
-`rm -r $TMPLOC`; # clean out old garbage
+`rm -rf $TMPLOC`; # clean out old garbage
 `mkdir -p $TMPLOC`; # make dirs if needed
 
 #$DBLOC="$TMPLOC/db_backup"; #where we'll dump out DBs                       
