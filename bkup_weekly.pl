@@ -1,7 +1,8 @@
 #!/usr/bin/perl
 # VARIABLES 
 
-$CODELOC = "~/webapps/schedule";
+$CODELOC = "/home/mrgschedule/webapps";
+$REPOSLOC = "/home/mrgschedule/repos";
 
 $TMPLOC="/home/mrgschedule/tmp/backup"; # temp staging dir root
 `rm -rf $TMPLOC`; # clean out old garbage
@@ -9,7 +10,7 @@ $TMPLOC="/home/mrgschedule/tmp/backup"; # temp staging dir root
 
 #$DBLOC="$TMPLOC/db_backup"; #where we'll dump out DBs                       
 $DBUSER = "mrgschedule_sch";
-$DBPASS = "Rolleiflex";
+$DBPASS = "Rollei66flex";
 #$BKUP_DRIVE = "/mnt/share";
 #`mount $BKUP_DRIVE`;  # mount remote drive
 
@@ -36,6 +37,10 @@ print "Exporting databases\n";
 # Create TAR file with code and DB dump
 print "Creating TAR file " . $TARFILE . "\n";
 `cd "$TMPLOC"; /bin/tar cvf "$TARFILE" "$DBFILENAME"`;
+# append code
+print "Appending code and repositories\n";
+`cd "$TMPLOC"; /bin/tar rvf "$TARFILE" "$CODELOC"`;
+`cd "$TMPLOC"; /bin/tar rvf "$TARFILE" "$REPOSLOC"`;
 
 # Compress the file                                                             
 print "Compressing TAR file\n";

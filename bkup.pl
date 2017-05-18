@@ -10,7 +10,7 @@ $TMPLOC="/home/mrgschedule/tmp/backup"; # temp staging dir root
 
 #$DBLOC="$TMPLOC/db_backup"; #where we'll dump out DBs                       
 $DBUSER = "mrgschedule_sch";
-$DBPASS = "Rolleiflex";
+$DBPASS = "Rollei66flex";
 #$BKUP_DRIVE = "/mnt/share";
 #`mount $BKUP_DRIVE`;  # mount remote drive
 
