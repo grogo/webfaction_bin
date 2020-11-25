@@ -38,17 +38,29 @@ my @backups = (
 		pass=>'Rolleiflex',
 		dir=>'bank'},
 
-	       {name=>'blog',
-		db=>'mrgschedule_rad_',
-		user=>'mrgschedule_rad_',
-		pass=>'OusEYuEX',
-		dir=>'rad_site'},
+	       # {name=>'blog',
+	       # 	db=>'mrgschedule_rad_',
+	       # 	user=>'mrgschedule_rad_',
+	       # 	pass=>'OusEYuEX',
+	       # 	dir=>'rad_site'},
+
+	       {name=>'new_blog',
+		db=>'mrgschedule_drp8',
+		user=>'mrgschedule_drp8',
+		pass=>'0XuV9EAy',
+		dir=>'drp8_drupal8'},
 
 	       {name=>'static',
 		db=>'',
 		user=>'',
 		pass=>'',
 		dir=>'schedule_static'},
+
+	       {name=>'vacation',
+		db=>'',
+		user=>'',
+		pass=>'',
+		dir=>'vacation2'},
 
 	       );
 
